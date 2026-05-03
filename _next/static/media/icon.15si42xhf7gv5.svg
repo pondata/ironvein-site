@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#11151c"/>
+      <stop offset="1" stop-color="#07090c"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff9a4d"/>
+      <stop offset="0.5" stop-color="#f56b1f"/>
+      <stop offset="1" stop-color="#c4501a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#f56b1f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f56b1f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="10" fill="url(#bg)"/>
+  <rect width="64" height="64" rx="10" fill="url(#glow)"/>
+
+  <!-- Hex shield -->
+  <path d="M32 4 L54 12 L54 38 L32 60 L10 38 L10 12 Z"
+        fill="rgba(245,107,31,0.08)"
+        stroke="url(#orange)"
+        stroke-width="2.5"
+        stroke-linejoin="round"/>
+
+  <!-- Inner hex -->
+  <path d="M32 12 L46 17 L46 35 L32 49 L18 35 L18 17 Z"
+        fill="none"
+        stroke="#f56b1f"
+        stroke-width="1"
+        stroke-linejoin="round"
+        opacity="0.5"/>
+
+  <!-- Vein I-bar mark -->
+  <rect x="29" y="18" width="6" height="28" fill="url(#orange)" rx="0.5"/>
+  <rect x="20" y="28" width="24" height="4" fill="url(#orange)" rx="0.5"/>
+
+  <!-- Spark accents -->
+  <circle cx="14" cy="14" r="1.2" fill="#ff9a4d"/>
+  <circle cx="50" cy="14" r="1.2" fill="#ff9a4d"/>
+  <circle cx="32" cy="56" r="1.2" fill="#ff9a4d"/>
+</svg>
